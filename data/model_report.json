@@ -1,0 +1,51 @@
+{
+  "kind": "real_osm_srtm",
+  "origin": "Торжок",
+  "destination": "Бологое",
+  "generated_utc": "2026-09-28T19:36:11.647108+00:00",
+  "road_source": "OpenStreetMap road graph via OSRM demo",
+  "elevation_source": "SRTM90m via Open Topo Data",
+  "distance_m": 124680.9,
+  "osrm_distance_m": 124961.4,
+  "sample_step_m": 250,
+  "forecast_horizon_m": 500,
+  "forecast": {
+    "holdout_mae_pct_points": 0.305,
+    "baseline_mae_pct_points": 0.569,
+    "holdout_points": 105,
+    "train_points": 242,
+    "model": {
+      "means": [
+        0.021020057306590217,
+        0.021719197707736355,
+        0.026042979942693376,
+        1.7367464183381078
+      ],
+      "stds": [
+        0.8013251003825781,
+        0.7509080204975134,
+        0.6054599387306636,
+        0.08338742472210592
+      ],
+      "coefficients": [
+        0.0153207464633274,
+        1.218568643332479,
+        -0.8500268995510258,
+        -0.043964623107355716,
+        -0.10706153357679564
+      ]
+    }
+  },
+  "telemetry": "simulated; not actual CAN readings",
+  "reconstruction": {
+    "method": "retained_points_only",
+    "missing_ranges": [
+      "143-171",
+      "291-339",
+      "425-473"
+    ],
+    "geometry": "boundary-direction cubic curve resampled every 250 m",
+    "elevation": "PCHIP raw elevation interpolation and five-point smoothing",
+    "forecast_training_points": 349
+  }
+}
